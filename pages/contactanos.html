@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos | Sabio Lector</title>
+
+    <!-- Bootstrap - solo CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <div class="header-container container-fluid d-flex justify-content-center">
+            <div class="header-region mycustom-container-xl d-flex justify-content-between align-items-center">
+                
+                <!-- Logo -->
+                <a class="sitename d-flex justify-content-start align-items-center" href="../index.html" target="_self" title="Inicio">
+                    <img class="sitename__logo" src="../img/IMG-Wizard_hat_logo.png" alt="Logo">
+                    <h1 class="sitename__title mb-0">Sabio Lector</h1>
+                </a>
+                
+                <nav class="navigation d-flex justify-content-end align-items-center">
+
+                    <!-- Menú de navegación responsive -->
+                    <input type="checkbox" id="navigation__input" class="d-none">
+                    <label for="navigation__input" class="navigation-bars d-block d-md-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </label>
+
+                    <!-- Menú de navegación -->
+                    <ul class="navigation-menu ps-0 mb-0 d-flex  align-items-md-center">
+                        <li class="navigation-item">
+                            <a class="navigation-item__link" href="./libros.html" target="_self" title="Libros">Libros</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a class="navigation-item__link" href="./novedades.html" target="_self" title="Novedades">Novedades</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a class="navigation-item__link" href="./recomendados.html" target="_self" title="Recomendados">Recomendados</a></li>
+                        <li class="navigation-item">
+                            <a class="navigation-item__link" href="./contactanos.html" target="_self" title="Contáctanos">Contáctanos</a>
+                        </li>
+                    </ul>
+                    
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <!-- Fin Cabecera -->
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Sección de bienvenida -->
+        <section id="welcome">
+            <div class="welcome-container container-fluid d-flex justify-content-center">
+                <div class="welcome-region container mycustom-container-xl">
+
+                    <!-- Banner que identifica la página -->
+                    <div class="contactus-bnr">
+                        <h2 class="bnr__title">Contáctanos</h2>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <div class="form-container container-fluid d-flex justify-content-center">
+                <div class="form-region container mycustom-container-xl">
+
+                    <!-- Formulario de contacto -->
+                    <h3>Cuentanos sobre ti</h3>
+                    <form action="#">
+                        <label for="name">¿Cual es tu nombre?</label>
+                        <input type="text" placeholder="Juan Perez" name="name" id="name"><br>
+                        <label for="email">¿Tu dirección de correo?</label>
+                        <input type="email" placeholder="tu@correo.com" name="email" id="email"><br>
+                        <p>¿Cuales son tus temáticas favoritas?</p>
+                        <input type="checkbox" name="topic1" id="topic1" value="Cuento">
+                        <label for="topic1">Cuento</label><br>
+                        <input type="checkbox" name="topic1" id="topic1" value="Narrativa">
+                        <label for="topic2">Narrativa</label><br>
+                        <input type="checkbox" name="topic1" id="topic1" value="Novela">
+                        <label for="topic3">Novela</label><br>
+                        <input type="checkbox" name="topic1" id="topic1" value="Poesía">
+                        <label for="topic4">Poesía</label><br>
+                        <label for="message">Dejanos un mensaje</label><br>
+                        <textarea name="message" id="message" rows="5" cols="50"></textarea><br>
+                        <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar">
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Fin Contenido principal -->
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-container container-fluid d-flex justify-content-center">
+            <div class="footer-region mycustom-container-xl d-flex justify-content-between align-items-start">
+                
+                <section class="footer-section ">
+        
+                    <!-- Logo -->
+                    <a class="sitename d-flex justify-content-start align-items-center" href="../index.html" target="_self" title="Inicio">
+                        <img class="sitename__logo" src="../img/IMG-Wizard_hat_logo.png" alt="Logo">
+                        <h6 class="sitename__title">Sabio Lector</h6>
+                    </a>
+        
+                </section>
+
+                <section class="footer-section">
+        
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorem molestiae reiciendis sunt a, hic quis laudantium quam magni commodi accusamus veritatis veniam magnam ipsum ducimus. Quia enim voluptates saepe!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non fugiat, esse sint temporibus quidem voluptatem quibusdam omnis cupiditate, minima iure officia tenetur dolore optio error aliquid pariatur provident libero in.</p>
+
+                    <p>Lorem ipsum dolor sit amet.</p>
+        
+                </section>
+
+                <section class="footer-section">
+        
+                    <!-- Formulario de suscripción -->
+                    <h6>Suscríbete</h6>
+                    <form action="#">
+                        <!-- <label for="correo">Suscríbete a nuestro boletín</label> -->
+                        <input type="email" placeholder="tu@correo.com" name="correo" id="correo">
+                        <input type="submit" value="Suscríbete">
+                    </form>
+
+                    <h6>Síguenos</h6>
+                    <div class="social-networks">
+                        <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="facebook">
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blankc" title="Instagram" class="instagram">
+                            <i class="fab fa-instagram-square fa-2x"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" title="Twitter" class="twitter">
+                            <i class="fab fa-twitter-square fa-2x"></i>
+                        </a>
+                    </div>
+        
+                </section>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Pie de página -->
+    
+    <!-- Font Awesome Script -->
+    <script src="https://kit.fontawesome.com/8cdc01aba4.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap - JS y Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
