@@ -77,9 +77,9 @@ form {
     padding-bottom: 1rem;
 }
 
-form input {
-    /* margin-bottom: 0.75rem; */
-}
+/* form input {
+    margin-bottom: 0.75rem;
+} */
 
 /* form input[type="text"],
 form input[type="email"],
@@ -496,10 +496,10 @@ footer {
     font-size: 0;
 }
 
-[class~="footer-section"] {
+/* [class~="footer-section"] { */
     /* Se usa el selector de atributo en combinación con ~ para seleccionar todos los elementos cuyo nombre de clase es footer-section dentro de una lista de clases separada por espacios */
     /* width: 33.333%; */
-}
+/* } */
 
 [class~="footer-section"]:first-child {
     padding-right: 20px;
@@ -561,9 +561,9 @@ footer {
 /* Para pantallas grandes (desktop) */
 @media only screen and (max-width: 992px) {
     
-    .section-title {
-        /* width: 50%; */
-    }
+    /* .section-title {
+        width: 50%;
+    } */
 
 }
 
