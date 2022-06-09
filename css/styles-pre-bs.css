@@ -39,15 +39,13 @@ h4 {
     font-family: 'Roboto', sans-serif;
     font-size: 1.375rem;
     line-height: 1.25;
-    /* padding-bottom: 0.5rem; */
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 h5 {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.25;
-    /* padding-bottom: 0.5rem; */
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 h6 {
     font-family: 'Roboto', sans-serif;
@@ -80,80 +78,75 @@ iframe {
 }
 
 /* Contenedores */
-/* .container {
-    display: block;
+.container {
+    display: block;   
     width: 100%;
-} */
-/* .container .container--full {
+}
+.container .container--full {
     max-width: 100vw;
     padding: 0 12px;
-} */
-/* .container .container--xlarge {
-    max-width: 1200px;
-    padding: 0 12px;
-} */
-.mycustom-container-xl {
-    width: 100%;
+}
+.container .container--xlarge {
     max-width: 1200px;
     padding: 0 12px;
 }
 
 /* Contenedores flex, envolvimiento y alineación */
-/* .flex-row {
+.flex-row {
     display: flex;
-} */
-/* .flex-col {
+}
+.flex-col {
     display: flex;
     flex-direction: column;
-} */
-/* .flex-row--wrap,
+}
+.flex-row--wrap,
 .flex-col--wrap {
     flex-wrap: wrap;
-} */
-/* .flex-row--justify-start,
+}
+.flex-row--justify-start,
 .flex-col--justify-start {
     justify-content: flex-start;
-} */
-/* .flex-row--justify-end,
+}
+.flex-row--justify-end,
 .flex-col--justify-end {
     justify-content: flex-end;
-} */
-/* .flex-row--justify-center,
+}
+.flex-row--justify-center,
 .flex-col--justify-center {
     justify-content: center;
-} */
-/* .flex-row--justify-between,
+}
+.flex-row--justify-between,
 .flex-col--justify-between {
     justify-content: space-between;
-} */
-/* .flex-row--justify-around,
+}
+.flex-row--justify-around,
 .flex-col--justify-around {
     justify-content: space-around;
-} */
-/* .flex-row--justify-even,
+}
+.flex-row--justify-even,
 .flex-col--justify-even {
     justify-content: space-evenly;
-} */
-/* .flex-row--align-start,
+}
+.flex-row--align-start,
 .flex-col--align-start {
     align-items: flex-start;
-} */
-/* .flex-row--align-end,
+}
+.flex-row--align-end,
 .flex-col--align-end {
     align-items: flex-end;
-} */
-/* .flex-row--align-center,
+}
+.flex-row--align-center,
 .flex-col--align-center {
     align-items: center;
-} */
-/* .flex-row--align-stretch,
+}
+.flex-row--align-stretch,
 .flex-col--align-stretch {
     align-items: stretch;
-} */
-/* .flex-row--align-base,
+}
+.flex-row--align-base,
 .flex-col--align-base {
     align-items: baseline;
-} */
+}
 
 /* Cabecera */
 header {
@@ -174,10 +167,10 @@ header {
     font-size: 0;   /* Ajuste para evitar espacios en blanco (whitespace) inesperados entre elementos inline e inline-block */
 }
 a.sitename {
-    /* display: flex; */
-    /* flex-flow: row nowrap; */
-    /* justify-content: flex-start; */
-    /* align-items: center; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
     font-size: 0;
     text-decoration: none;
     color: #000;
@@ -194,28 +187,28 @@ h6.sitename__title {
 }
 
 /* Menú de navegación */
-/* .navigation {
+.navigation {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-} */
+}
 #navigation__input {
     /* Un input expandirá/contraerá el menú de navegación como opciones dentro de un menú hamburguesa */
     /* El input se mantedrá oculto en todas las pantallas pero su label se hará visible en pantallas de 768px de ancho o menos */
-    /* display: none; */
+    display: none;
     font-size: 1rem;
 }
 .navigation-bars {
     /* label */
-    /* display: none; */
+    display: none;
     font-size: 1rem;
     color: #444;
     transition: color 300ms ease;
 }
 .navigation-menu {
-    /* display: flex; */
-    /* justify-content: flex-end; */
-    /* align-items: center; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 0;
     list-style-type: none;
 }
@@ -298,63 +291,55 @@ main section:not(:last-child) {
 }
 
 /* Tarjetas de producto */
-/* .cards-region {
+.cards-region {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     overflow: hidden;
-} */
+}
 .card {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     /* width: 276px; */   /* (1200px/4) - 24px */
-    /* width: 25%; */ /* En pantallas con un ancho de 769px o superior, se mostrarán cuatro tarjetas de producto */
-    padding: 20px;
-    border-color: #444;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 0;
-    transition: all 300ms ease;
+    width: 25%; /* En pantallas con un ancho de 769px o superior, se mostrarán cuatro tarjetas de producto */
+    padding: 12px;
 }
-/* .card-body {
+.card-body {
     display: flex;
     flex-flow: column nowrap;
     align-content: flex-start;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     background-color: rgba(255, 255, 255, 1);
     padding: 20px;
     border-width: 1px;
     border-style: solid;
     border-color: #444;
     transition: all 300ms ease;
-} */
-/* .card:hover .card-body {
-    transform: scale(1.05);
-} */
-.card:hover {
+}
+.card:hover .card-body {
     transform: scale(1.05);
 }
-/* .card-body .card-body__img {
+.card-body .card-body__img {
     align-self: center;
     width: 100%;
     max-width: 184px;
-} */
-.card-body .card-body__title {
+}
+.card-body h4.card-body__title {
     font-family: 'Roboto', sans-serif;
     font-size: 1.375rem;
     font-weight: 500;
     color: #444;
 }
-.card-body .card-body__author {
-    /* flex: 1 0 auto; */ /* Ajuste para que el botón de la tarjeta se muestre en el mismo eje que las demas tarjetas */
+.card-body h5.card-body__author {
+    flex: 1 0 auto; /* Ajuste para que el botón de la tarjeta se muestre en el mismo eje que las demas tarjetas */
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #444;
 }
-/* .card-body .card-body__button {
-    align-self: flex-end;
+.card-body .card-body__button {
+    align-self: flex-end;       
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
@@ -364,20 +349,9 @@ main section:not(:last-child) {
     border: none;
     cursor: pointer;
     transition: all 300ms ease;
-} */
-/* .card-body .card-body__button:hover {
+}
+.card-body .card-body__button:hover {
     background-color: #0b5ed7;
-} */
-.card .card-body .btn {
-    align-self: flex-end;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    padding: 6px 12px;
-    /* border: none; */
-    border-radius: 0;
-    cursor: pointer;
-    transition: all 300ms ease;
 }
 
 footer {
@@ -439,9 +413,9 @@ footer {
 /* Media Queries */
 /* Para pantallas grandes (desktop) */
 @media only screen and (max-width: 992px) {
-    /* .card {
+    .card {
         width: 33.333%;
-    } */
+    }
 }
 
 /* Para pantallas medianas (tablets) */
@@ -452,19 +426,18 @@ footer {
         border-bottom-color: blue; */
         border-bottom-width: 0;
     }
-    /* .navigation-bars { */
-        /* display: block; */ /* El label (el icono del menú hamburguesa) del input se hace visible en pantallas de 768px de ancho o menos */
-    /* } */
+    .navigation-bars {
+        display: block; /* El label (el icono del menú hamburguesa) del input se hace visible en pantallas de 768px de ancho o menos */
+    }
     .navigation-bars:hover {
         color: rgba(0,0,0,1);
     }
     .navigation-menu {        
         flex-flow: column nowrap;   /* En estas pantallas, la dirección del flex cambia a fin de mostrar las opciones del menú de navegación dispuestas verticalmente */
-        /* align-items: flex-start; */
+        align-items: flex-start;
         position: absolute;
         width: 100%;
-        /* top: calc(-100% - 72px); */
-        top: calc(-100% - 89px);
+        top: calc(-100% - 72px);
         left: 0;
         background-color: #ccc;
         padding-bottom: 10px;
@@ -488,9 +461,9 @@ footer {
     .index-section-title {
         width: 66.666%;
     }
-    /* .card { */
-        /* width: 50%; */ /* En estas pantallas se mostrarán dos tarjetas de producto por fila */
-    /* } */
+    .card {
+        width: 50%; /* En estas pantallas se mostrarán dos tarjetas de producto por fila */
+    }
     .footer-region {
         flex-flow: column nowrap;
     }
@@ -523,7 +496,7 @@ footer {
     .index-section-title {
         width: 100%;
     }
-    /* .card { */
-        /* width: 100%; */    /* En estas pantallas se mostrará una tarjeta de producto por fila */
-    /* }     */
+    .card {
+        width: 100%;    /* En estas pantallas se mostrará una tarjeta de producto por fila */
+    }    
 }

@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctanos | Sabio Lector</title>
-    
+
+    <!-- Bootstrap - solo CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/styles.css">
 
 </head>
@@ -13,25 +16,25 @@
 
     <!-- Cabecera -->
     <header>
-        <div class="header-wrapper">
-            <div class="header-region">
-    
+        <div class="header-container container-fluid d-flex justify-content-center">
+            <div class="header-region mycustom-container-xl d-flex justify-content-between align-items-center">
+                
                 <!-- Logo -->
-                <a class="sitename" href="../index.html" target="_self" title="Inicio">
+                <a class="sitename d-flex justify-content-start align-items-center" href="../index.html" target="_self" title="Inicio">
                     <img class="sitename__logo" src="../img/IMG-Wizard_hat_logo.png" alt="Logo">
-                    <h1 class="sitename__title">Sabio Lector</h1>
+                    <h1 class="sitename__title mb-0">Sabio Lector</h1>
                 </a>
                 
-                <nav class="navigation">
+                <nav class="navigation d-flex justify-content-end align-items-center">
 
                     <!-- Menú de navegación responsive -->
-                    <input type="checkbox" id="navigation__input">
-                    <label for="navigation__input" class="navigation-bars">
+                    <input type="checkbox" id="navigation__input" class="d-none">
+                    <label for="navigation__input" class="navigation-bars d-block d-md-none">
                         <i class="fas fa-bars fa-lg"></i>
                     </label>
 
                     <!-- Menú de navegación -->
-                    <ul class="navigation-menu">
+                    <ul class="navigation-menu ps-0 mb-0 d-flex  align-items-md-center">
                         <li class="navigation-item">
                             <a class="navigation-item__link" href="./libros.html" target="_self" title="Libros">Libros</a>
                         </li>
@@ -54,9 +57,10 @@
     <!-- Contenido principal -->
     <main>
 
+        <!-- Sección de bienvenida -->
         <section id="welcome">
-            <div class="welcome-wrapper">
-                <div class="welcome-region">
+            <div class="welcome-container container-fluid d-flex justify-content-center">
+                <div class="welcome-region container mycustom-container-xl">
 
                     <!-- Banner que identifica la página -->
                     <div class="contactus-bnr">
@@ -68,8 +72,8 @@
         </section>
 
         <section id="contact-form">
-            <div class="form-wrapper">
-                <div class="form-region">
+            <div class="form-container container-fluid d-flex justify-content-center">
+                <div class="form-region container mycustom-container-xl">
 
                     <!-- Formulario de contacto -->
                     <h3>Cuentanos sobre ti</h3>
@@ -101,26 +105,30 @@
 
     <!-- Pie de página -->
     <footer>
-        <div class="footer-wrapper">
-            <div class="footer-region">
+        <div class="footer-container container-fluid d-flex justify-content-center">
+            <div class="footer-region mycustom-container-xl d-flex justify-content-between align-items-start">
                 
-                <section class="footer-section1">
+                <section class="footer-section ">
         
                     <!-- Logo -->
-                    <a class="sitename" href="../index.html" target="_self" title="Inicio">
+                    <a class="sitename d-flex justify-content-start align-items-center" href="../index.html" target="_self" title="Inicio">
                         <img class="sitename__logo" src="../img/IMG-Wizard_hat_logo.png" alt="Logo">
                         <h6 class="sitename__title">Sabio Lector</h6>
                     </a>
         
                 </section>
 
-                <section class="footer-section2">
+                <section class="footer-section">
         
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorem molestiae reiciendis sunt a, hic quis laudantium quam magni commodi accusamus veritatis veniam magnam ipsum ducimus. Quia enim voluptates saepe!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non fugiat, esse sint temporibus quidem voluptatem quibusdam omnis cupiditate, minima iure officia tenetur dolore optio error aliquid pariatur provident libero in.</p>
+
+                    <p>Lorem ipsum dolor sit amet.</p>
         
                 </section>
 
-                <section class="footer-section3">
+                <section class="footer-section">
         
                     <!-- Formulario de suscripción -->
                     <h6>Suscríbete</h6>
@@ -152,6 +160,9 @@
     
     <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/8cdc01aba4.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap - JS y Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 </html>
