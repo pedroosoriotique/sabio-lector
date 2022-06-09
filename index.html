@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabio Lector</title>
+
+    <!-- Bootstrap - solo CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     
     <link rel="stylesheet" href="./css/styles.css">
 
@@ -13,25 +16,25 @@
 
     <!-- Cabecera -->
     <header>
-        <div class="header-wrapper">
-            <div class="header-region">
-    
+        <div class="header-container container-fluid">
+            
+            <div class="header-region container-xl d-flex justify-content-between align-items-center row-cols-auto gx-0 gx-md-4">
+
                 <!-- Logo -->
-                <a class="sitename" href="index.html" target="_self" title="Inicio">
-                    <img class="sitename__logo" src="img/IMG-Wizard_hat_logo.png" alt="Logo">
-                    <h1 class="sitename__title">Sabio Lector</h1>
+                <a class="sitename col d-flex align-items-center" href="index.html" target="_self" title="Inicio">
+                    <img class="sitename__logo col" src="img/IMG-Wizard_hat_logo.png" alt="Logo">
+                    <h1 class="sitename__title col">Sabio Lector</h1>
                 </a>
                 
-                <nav class="navigation">
-
-                    <!-- Menú de navegación responsive -->
-                    <input type="checkbox" id="navigation__input">
-                    <label for="navigation__input" class="navigation-bars">
+                <nav class="navigation col d-flex justify-content-end align-items-center h-100 gx-0">
+                    <!-- Menú Hamburguesa -->
+                    <input type="checkbox" id="navigation__input" class="d-none">
+                    <label for="navigation__input" class="navigation-bars d-block d-md-none">
                         <i class="fas fa-bars fa-lg"></i>
                     </label>
-
+                    
                     <!-- Menú de navegación -->
-                    <ul class="navigation-menu">
+                    <ul class="navigation-menu d-flex flex-column flex-md-row justify-content-end align-items-md-center">
                         <li class="navigation-item">
                             <a class="navigation-item__link" href="./pages/libros.html" target="_self" title="Libros">Libros</a>
                         </li>
@@ -46,7 +49,9 @@
                     </ul>
                     
                 </nav>
+
             </div>
+
         </div>
     </header>
     <!-- Fin Cabecera -->
@@ -54,291 +59,443 @@
     <!-- Contenido principal -->
     <main>
 
-        <section id="welcome">
-            <div class="welcome-wrapper">
-                <div class="welcome-region">
+        <!-- Carrusel -->
+        <section id="carousel">
+
+            <div class="carousel-container container-fluid">
+                <div class="carousel-region container-xl">
+
+                    <div id="main-carousel" class="carousel slide" data-bs-ride="carousel">
+        
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="0" class="carousel-indicators__btn active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="1" class="carousel-indicators__btn" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="2" class="carousel-indicators__btn" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="3" class="carousel-indicators__btn" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#main-carousel" data-bs-slide-to="4" class="carousel-indicators__btn" aria-label="Slide 5"></button>
+                        </div>
+        
+                        <!-- Diapisitivas -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="./img/IMG-Slide1.png" class="d-block w-100" alt="Slide 1">
+                                <div class="carousel-caption d-none d-md-flex flex-column justify-content-start align-items-center">
+                                    <h2 class="slide-book-title">Doce cuentos pregrinos</h2>
+                                    <h3 class="slide-book-author">Gabriel García Márquez</h3>
+                                    <p class="slide-book-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum tempus fringilla. Ut ornare pellentesque.</p>
+                                    <div class="caption-buttons">
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <button type="button" class="btn btn-success">Leer un fragmento</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./img/IMG-Slide2.png" class="d-block w-100" alt="Slide 2">
+                                <div class="carousel-caption d-none d-md-flex flex-column justify-content-start align-items-center">
+                                    <h2 class="slide-book-title">Doce cuentos pregrinos</h2>
+                                    <h3 class="slide-book-author">Gabriel García Márquez</h3>
+                                    <p class="slide-book-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum tempus fringilla. Ut ornare pellentesque.</p>
+                                    <div class="caption-buttons">
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <button type="button" class="btn btn-success">Leer un fragmento</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./img/IMG-Slide3.png" class="d-block w-100" alt="Slide 3">
+                                <div class="carousel-caption d-none d-md-flex flex-column justify-content-start align-items-center">
+                                    <h2 class="slide-book-title">Doce cuentos pregrinos</h2>
+                                    <h3 class="slide-book-author">Gabriel García Márquez</h3>
+                                    <p class="slide-book-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum tempus fringilla. Ut ornare pellentesque.</p>
+                                    <div class="caption-buttons">
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <button type="button" class="btn btn-success">Leer un fragmento</button>
+                                    </div>cing elit. Etiam rutrum tempus fringilla. Ut ornare pellentesque.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./img/IMG-Slide4.png" class="d-block w-100" alt="Slide 4">
+                                <div class="carousel-caption d-none d-md-flex flex-column justify-content-start align-items-center">
+                                    <h2 class="slide-book-title">Doce cuentos pregrinos</h2>
+                                    <h3 class="slide-book-author">Gabriel García Márquez</h3>
+                                    <p class="slide-book-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum tempus fringilla. Ut ornare pellentesque.</p>
+                                    <div class="caption-buttons">
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <button type="button" class="btn btn-success">Leer un fragmento</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./img/IMG-Slide5.png" class="d-block w-100" alt="Slide 5">
+                                <div class="carousel-caption d-none d-md-flex flex-column justify-content-start align-items-center">
+                                    <h2 class="slide-book-title">Doce cuentos pregrinos</h2>
+                                    <h3 class="slide-book-author">Gabriel García Márquez</h3>
+                                    <p class="slide-book-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum tempus fringilla. Ut ornare pellentesque.</p>
+                                    <div class="caption-buttons">
+                                        <button type="button" class="btn btn-primary">Comprar</button>
+                                        <button type="button" class="btn btn-success">Leer un fragmento</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+        
+                        <!-- prev/next buttons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#main-carousel" data-bs-slide="prev">
+                            <span class="fas fa-chevron-left fa-2x" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#main-carousel" data-bs-slide="next">
+                            <span class="fas fa-chevron-right fa-2x" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+        
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de bienvenida -->
+        <!-- <section id="welcome"> -->
+            <!-- <div class="welcome-container container-fluid"> -->
+                <!-- <div class="welcome-region container-xl"> -->
 
 
                     <!-- Banner que identifica la página -->
-                    <div class="home-bnr">
-                        <h2 class="bnr__title">Bienvenido a Sabio Lector</h2>
-                    </div>
+                    <!-- <div class="home-bnr"> -->
+                        <!-- <h2 class="bnr__title">Bienvenido a Sabio Lector</h2> -->
+                    <!-- </div> -->
         
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic esse in sequi facilis quaerat itaque, saepe vero id autem perspiciatis voluptatibus iste illum quo aperiam labore debitis nostrum porro ratione?</p>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic esse in sequi facilis quaerat itaque, saepe vero id autem perspiciatis voluptatibus iste illum quo aperiam labore debitis nostrum porro ratione?</p> -->
         
-                    <p>Officia a impedit perspiciatis! Id maiores enim unde magnam maxime asperiores ut quia in culpa quis quos fugit dolor beatae atque cum laborum iure impedit ducimus molestiae expedita, et nisi!</p>
+                    <!-- <p>Officia a impedit perspiciatis! Id maiores enim unde magnam maxime asperiores ut quia in culpa quis quos fugit dolor beatae atque cum laborum iure impedit ducimus molestiae expedita, et nisi!</p> -->
         
-                    <p>Possimus provident nesciunt beatae, ex enim veritatis optio magnam amet aperiam explicabo dolore aut perspiciatis nostrum eum fuga perferendis illo dolores facere tempore, excepturi unde omnis atque! Quam, architecto reprehenderit.</p>
+                    <!-- <p>Lorem ipsum dolor sit amet.</p> -->
 
                     
-                </div>
-            </div>
-        </section>
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </section> -->
 
         <!-- Sección Novedades -->
-        <section id="newreleases-section">
+        <section id="newreleases">
 
-            <div class="newreleases-wrapper">
-                <div class="newreleases-region">
+            <div class="newreleases-container container-fluid">
+                <div class="newreleases-region container-xl">
 
-                    <h2>Novedades</h2>
+                    <div class="row gx-0">
+                        <div class="section-title col-sm-8 col-md-4">
+    
+                            <h2>Novedades</h2>
+    
+                        </div>
+                    </div>
 
                 </div>
             </div>
 
-            <div class="cards-wrapper">
-                <div class="cards-region">
-                    
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
+            <div class="cards-container container-fluid">
+                <div class="cards-region container-xl gx-0 gx-md-4">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-cotent-start row-cols-lg-4 gx-0">
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/IMG-Revoluciones.png" alt="Imagen portada Revoluciones" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Revoluciones</h4>
+                                    <h5 class="card-book-author">Diana Uribe</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
                         </div>
+                       
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/IMG-El_crimen_del_siglo.png" alt="Imagen portada El crimen del siglo" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">El crimen del siglo</h4>
+                                    <h5 class="card-book-author">Miguel Torres</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/IMG-Del_amor_y_otros_demonios.png" alt="Imagen portada Del amor y otros demonios" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">Del amor y otros demonios</h4>
+                                    <h5 class="card-book-author">Gabriel García Márquez</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/IMG-El_olvido_que_seremos.png" alt="Imagen portada El olvido que seremos" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">El olvido que seremos</h4>
+                                    <h5 class="card-book-author">Héctor Abad Faciolince</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                </div>   
+                </div>
             </div>
+
         </section>
 
         <!-- Sección Los más leidos -->
-        <section id="mostread-section">
+        <section id="mostread">
 
-            <div class="section-title__wrapper">
-                <div class="section-title__region">
+            <div class="mostread-container container-fluid">
+                <div class="mostread-region container-xl">
 
-                    <h2>Los más leídos</h2>
+                    <div class="row gx-0">
+                        <div class="section-title col-sm-8 col-md-4">
+    
+                            <h2>Los más leidos</h2>
+    
+                        </div>
+                    </div>
 
                 </div>
             </div>
-           
-            <div class="cards-wrapper">
-                <div class="cards-region">
-                    
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
+
+            <div class="cards-container container-fluid">
+                <div class="cards-region container-xl gx-0 gx-md-4">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-cotent-start row-cols-lg-4 gx-0">
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/IMG-Revoluciones.png" alt="Imagen portada Revoluciones" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Revoluciones</h4>
+                                    <h5 class="card-book-author">Diana Uribe</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
                         </div>
+                       
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/IMG-El_crimen_del_siglo.png" alt="Imagen portada El crimen del siglo" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">El crimen del siglo</h4>
+                                    <h5 class="card-book-author">Miguel Torres</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/IMG-Del_amor_y_otros_demonios.png" alt="Imagen portada Del amor y otros demonios" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">Del amor y otros demonios</h4>
+                                    <h5 class="card-book-author">Gabriel García Márquez</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/IMG-El_olvido_que_seremos.png" alt="Imagen portada El olvido que seremos" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">El olvido que seremos</h4>
+                                    <h5 class="card-book-author">Héctor Abad Faciolince</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                </div>   
+                </div>
             </div>
+
         </section>
 
         <!-- Sección Recomendados -->
-        <section id="recommendations-section">
+        <section id="recommendations">
 
-            <div class="section-title__wrapper">
-                <div class="section-title__region">
+            <div class="recommendations-container container-fluid">
+                <div class="recommendations-region container-xl">
 
-                    <h2>Recomendados</h2>
+                    <div class="row gx-0">
+                        <div class="section-title col-sm-8 col-md-4">
+    
+                            <h2>Recomendados</h2>
+    
+                        </div>
+                    </div>
 
                 </div>
             </div>
-            
-            <div class="cards-wrapper">
-                <div class="cards-region">
-                    
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
+
+            <div class="cards-container container-fluid">
+                <div class="cards-region container-xl gx-0 gx-md-4">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-cotent-start row-cols-lg-4 gx-0">
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/IMG-Revoluciones.png" alt="Imagen portada Revoluciones" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Revoluciones</h4>
+                                    <h5 class="card-book-author">Diana Uribe</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
                         </div>
+                       
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/IMG-El_crimen_del_siglo.png" alt="Imagen portada El crimen del siglo" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">El crimen del siglo</h4>
+                                    <h5 class="card-book-author">Miguel Torres</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/IMG-Del_amor_y_otros_demonios.png" alt="Imagen portada Del amor y otros demonios" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">Del amor y otros demonios</h4>
+                                    <h5 class="card-book-author">Gabriel García Márquez</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./img/IMG-El_olvido_que_seremos.png" alt="Imagen portada El olvido que seremos" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">El olvido que seremos</h4>
+                                    <h5 class="card-book-author">Héctor Abad Faciolince</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <img class="card-body__img" src="./img/IMG-Boook.png" alt="">
-                            <h4 class="card-body__title">Título</h4>
-                            <h5 class="card-body__author">Autor</h5>
-                            <button class="card-body__button">Ver más</button>
-                        </div>
-                    </div>
-
-                </div>   
+                </div>
             </div>
+
         </section>
 
     </main>
-    <!-- Fin Contenido principal -->
+    <!-- Fin Contenido principal -->   
 
-   <!-- Pie de página -->
+    <!-- Pie de página -->
     <footer>
-        <div class="footer-wrapper">
-            <div class="footer-region">
-                
-                <section class="footer-section1">
-        
+        <div class="footer-container container-fluid">
+            <div class="footer-region container-xl d-flex flex-column flex-md-row justify-content-between align-items-start row-cols-md-3 gx-0 gx-md-4">
+
+                <section class="footer-section col">
+            
                     <!-- Logo -->
-                    <a class="sitename" href="index.html" target="_self" title="Inicio">
-                        <img class="sitename__logo" src="img/IMG-Wizard_hat_logo.png" alt="Logo">
-                        <h6 class="sitename__title">Sabio Lector</h6>
+                    <a class="sitename col d-flex align-items-center" href="index.html" target="_self" title="Inicio">
+                        <img class="sitename__logo col" src="img/IMG-Wizard_hat_logo.png" alt="Logo">
+                        <h6 class="sitename__title col">Sabio Lector</h6>
                     </a>
         
                 </section>
 
-                <section class="footer-section2">
+                <section class="footer-section col">
         
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorem molestiae reiciendis sunt a, hic quis laudantium quam magni commodi accusamus veritatis veniam magnam ipsum ducimus. Quia enim voluptates saepe!</p>
+
+                    <p>Lorem ipsum dolor sit amet.</p>
         
                 </section>
 
-                <section class="footer-section3">
+                <section class="footer-section col">
         
                     <!-- Formulario de suscripción -->
                     <h6>Suscríbete</h6>
-                    <form action="#">
+
+                    <!-- <form action="#" id="suscribete"> -->
                         <!-- <label for="correo">Suscríbete a nuestro boletín</label> -->
-                        <input type="email" placeholder="tu@correo.com" name="correo" id="correo">
-                        <input type="submit" value="Suscríbete">
+                        <!-- <input type="email" placeholder="tu@correo.com" name="correo" id="correo"> -->
+                        <!-- <input type="submit" value="Suscríbete"> -->
+                    <!-- </form> -->
+
+                    <form action="#" id="subscribe">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text fas fa-envelope fa-lg" id="subscribe-input-group"></span>
+                            <!-- <label for="correo">Suscríbete a nuestro boletín</label> -->
+                            <input type="text" class="form-control" placeholder="tu@correo.com" aria-label="Dirección de correo" aria-describedby="subscribe-input-group">
+                        </div>
                     </form>
 
+
                     <h6>Síguenos</h6>
+
                     <div class="social-networks">
+
+                        <!-- Facebook -->
                         <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="facebook">
-                            <i class="fab fa-facebook-square fa-2x"></i>
+                            <i class="fab fa-facebook-f fa-sm"></i>
                         </a>
+
+                        <!-- Instagram -->
                         <a href="https://www.instagram.com/" target="_blankc" title="Instagram" class="instagram">
-                            <i class="fab fa-instagram-square fa-2x"></i>
+                            <i class="fab fa-instagram fa-sm"></i>
                         </a>
+
+                        <!-- Twitter -->
                         <a href="https://twitter.com/" target="_blank" title="Twitter" class="twitter">
-                            <i class="fab fa-twitter-square fa-2x"></i>
+                            <i class="fab fa-twitter fa-sm"></i>
                         </a>
+
                     </div>
         
                 </section>
+                
 
             </div>
         </div>
@@ -347,6 +504,9 @@
     
     <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/8cdc01aba4.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap - JS y Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 </html>

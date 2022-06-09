@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recomendados | Sabio Lector</title>
 
+    <!-- Bootstrap - solo CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/styles.css">
 
 </head>
@@ -13,25 +16,25 @@
 
     <!-- Cabecera -->
     <header>
-        <div class="header-wrapper">
-            <div class="header-region">
-    
+        <div class="header-container container-fluid">
+            
+            <div class="header-region container-xl d-flex justify-content-between align-items-center row-cols-auto gx-0 gx-md-4">
+
                 <!-- Logo -->
-                <a class="sitename" href="../index.html" target="_self" title="Inicio">
-                    <img class="sitename__logo" src="../img/IMG-Wizard_hat_logo.png" alt="Logo">
-                    <h1 class="sitename__title">Sabio Lector</h1>
+                <a class="sitename col d-flex align-items-center" href="../index.html" target="_self" title="Inicio">
+                    <img class="sitename__logo col" src="../img/IMG-Wizard_hat_logo.png" alt="Logo">
+                    <h1 class="sitename__title col">Sabio Lector</h1>
                 </a>
                 
-                <nav class="navigation">
-
-                    <!-- Menú de navegación responsive -->
-                    <input type="checkbox" id="navigation__input">
-                    <label for="navigation__input" class="navigation-bars">
+                <nav class="navigation col d-flex justify-content-end align-items-center h-100 gx-0">
+                    <!-- Menú Hamburguesa -->
+                    <input type="checkbox" id="navigation__input" class="d-none">
+                    <label for="navigation__input" class="navigation-bars d-block d-md-none">
                         <i class="fas fa-bars fa-lg"></i>
                     </label>
-
+                    
                     <!-- Menú de navegación -->
-                    <ul class="navigation-menu">
+                    <ul class="navigation-menu d-flex flex-column flex-md-row justify-content-end align-items-md-center">
                         <li class="navigation-item">
                             <a class="navigation-item__link" href="./libros.html" target="_self" title="Libros">Libros</a>
                         </li>
@@ -46,17 +49,20 @@
                     </ul>
                     
                 </nav>
+
             </div>
+
         </div>
     </header>
     <!-- Fin Cabecera -->
 
     <!-- Contenido principal -->
     <main>
-
-        <section id="welcome-section">
-            <div class="welcome-wrapper">
-                <div class="welcome-region">
+        
+        <!-- Sección de bienvenida -->
+        <section id="welcome">
+            <div class="welcome-container container-fluid">
+                <div class="welcome-region container-lg">
 
                     <!-- Banner que identifica la página -->
                     <div class="recommendations-bnr">
@@ -73,54 +79,256 @@
             </div>
         </section>
 
+        <!-- Sección Recomendados -->
+        <section id="recommendations">
+
+            <!-- <div class="recommendations-container container-fluid">
+                <div class="recommendations-region container-xl">
+                    <div class="section-title">
+
+                        <h2>Recomendados</h2>
+
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="cards-container container-fluid">
+                <div class="cards-region container-xl gx-0 gx-md-4">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-cotent-start row-cols-lg-4 gx-0">
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../img/IMG-Revoluciones.png" alt="Imagen portada Revoluciones" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Revoluciones</h4>
+                                    <h5 class="card-book-author">Diana Uribe</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../img/IMG-El_crimen_del_siglo.png" alt="Imagen portada El crimen del siglo" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">El crimen del siglo</h4>
+                                    <h5 class="card-book-author">Miguel Torres</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../img/IMG-Del_amor_y_otros_demonios.png" alt="Imagen portada Del amor y otros demonios" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">Del amor y otros demonios</h4>
+                                    <h5 class="card-book-author">Gabriel García Márquez</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../img/IMG-El_olvido_que_seremos.png" alt="Imagen portada El olvido que seremos" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">El olvido que seremos</h4>
+                                    <h5 class="card-book-author">Héctor Abad Faciolince</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../img/IMG-Revoluciones.png" alt="Imagen portada Revoluciones" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Revoluciones</h4>
+                                    <h5 class="card-book-author">Diana Uribe</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../img/IMG-El_crimen_del_siglo.png" alt="Imagen portada El crimen del siglo" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">El crimen del siglo</h4>
+                                    <h5 class="card-book-author">Miguel Torres</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../img/IMG-Del_amor_y_otros_demonios.png" alt="Imagen portada Del amor y otros demonios" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">Del amor y otros demonios</h4>
+                                    <h5 class="card-book-author">Gabriel García Márquez</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../img/IMG-El_olvido_que_seremos.png" alt="Imagen portada El olvido que seremos" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">El olvido que seremos</h4>
+                                    <h5 class="card-book-author">Héctor Abad Faciolince</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../img/IMG-Revoluciones.png" alt="Imagen portada Revoluciones" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Revoluciones</h4>
+                                    <h5 class="card-book-author">Diana Uribe</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../img/IMG-El_crimen_del_siglo.png" alt="Imagen portada El crimen del siglo" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">El crimen del siglo</h4>
+                                    <h5 class="card-book-author">Miguel Torres</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../img/IMG-Del_amor_y_otros_demonios.png" alt="Imagen portada Del amor y otros demonios" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">Del amor y otros demonios</h4>
+                                    <h5 class="card-book-author">Gabriel García Márquez</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="../img/IMG-El_olvido_que_seremos.png" alt="Imagen portada El olvido que seremos" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-book-title">El olvido que seremos</h4>
+                                    <h5 class="card-book-author">Héctor Abad Faciolince</h5>
+                                </div>
+                                <div class="card-buttons">
+                                    <button class="btn btn-primary">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
+
     </main>
     <!-- Fin Contenido principal -->
 
     <!-- Pie de página -->
     <footer>
-        <div class="footer-wrapper">
-            <div class="footer-region">
-                
-                <section class="footer-section1">
-        
+        <div class="footer-container container-fluid">
+            <div class="footer-region container-xl d-flex flex-column flex-md-row justify-content-between align-items-start row-cols-md-3 gx-0 gx-md-4">
+
+                <section class="footer-section col">
+            
                     <!-- Logo -->
-                    <a class="sitename" href="../index.html" target="_self" title="Inicio">
-                        <img class="sitename__logo" src="../img/IMG-Wizard_hat_logo.png" alt="Logo">
-                        <h6 class="sitename__title">Sabio Lector</h6>
+                    <a class="sitename col d-flex align-items-center" href="../index.html" target="_self" title="Inicio">
+                        <img class="sitename__logo col" src="../img/IMG-Wizard_hat_logo.png" alt="Logo">
+                        <h6 class="sitename__title col">Sabio Lector</h6>
                     </a>
         
                 </section>
 
-                <section class="footer-section2">
+                <section class="footer-section col">
         
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolorem molestiae reiciendis sunt a, hic quis laudantium quam magni commodi accusamus veritatis veniam magnam ipsum ducimus. Quia enim voluptates saepe!</p>
+
+                    <p>Lorem ipsum dolor sit amet.</p>
         
                 </section>
 
-                <section class="footer-section3">
+                <section class="footer-section col">
         
                     <!-- Formulario de suscripción -->
                     <h6>Suscríbete</h6>
-                    <form action="#">
+
+                    <!-- <form action="#" id="suscribete"> -->
                         <!-- <label for="correo">Suscríbete a nuestro boletín</label> -->
-                        <input type="email" placeholder="tu@correo.com" name="correo" id="correo">
-                        <input type="submit" value="Suscríbete">
+                        <!-- <input type="email" placeholder="tu@correo.com" name="correo" id="correo"> -->
+                        <!-- <input type="submit" value="Suscríbete"> -->
+                    <!-- </form> -->
+
+                    <form action="#" id="subscribe">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text fas fa-envelope fa-lg" id="subscribe-input-group"></span>
+                            <!-- <label for="correo">Suscríbete a nuestro boletín</label> -->
+                            <input type="text" class="form-control" placeholder="tu@correo.com" aria-label="Dirección de correo" aria-describedby="subscribe-input-group">
+                        </div>
                     </form>
 
+
                     <h6>Síguenos</h6>
+
                     <div class="social-networks">
+
+                        <!-- Facebook -->
                         <a href="https://www.facebook.com/" target="_blank" title="Facebook" class="facebook">
-                            <i class="fab fa-facebook-square fa-2x"></i>
+                            <i class="fab fa-facebook-f fa-sm"></i>
                         </a>
+
+                        <!-- Instagram -->
                         <a href="https://www.instagram.com/" target="_blankc" title="Instagram" class="instagram">
-                            <i class="fab fa-instagram-square fa-2x"></i>
+                            <i class="fab fa-instagram fa-sm"></i>
                         </a>
+
+                        <!-- Twitter -->
                         <a href="https://twitter.com/" target="_blank" title="Twitter" class="twitter">
-                            <i class="fab fa-twitter-square fa-2x"></i>
+                            <i class="fab fa-twitter fa-sm"></i>
                         </a>
+
                     </div>
         
                 </section>
+                
 
             </div>
         </div>
@@ -129,6 +337,9 @@
     
     <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/8cdc01aba4.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap - JS y Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
 </body>
 </html>
