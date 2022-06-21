@@ -1,0 +1,73 @@
+// Menú de navegación
+.navigation {
+    // display: flex;
+    // justify-content: flex-end;
+    // align-items: center;
+    #navigation__input {                // Un input expandirá/contraerá el menú de navegación como opciones dentro de un menú hamburguesa.
+                                        // El input se mantedrá oculto en todas las pantallas pero su label se hará visible en pantallas de 768px de ancho o menos.
+        // display: none;    
+        font: {
+            size: 1rem;
+        }
+    }
+    .navigation-bars {                  // label   
+        // display: none;
+        font: {
+            size: 1rem;
+        }
+        color: #444;
+        transition: color 300ms ease;
+        &:hover {
+            color: rgba(0,0,0,1);
+        }
+    }
+    .navigation-menu {
+        // display: flex;
+        // justify-content: flex-end;
+        // align-items: center;
+        font: {
+            size: 0;
+        }
+        padding: {
+            left: 0;
+        }
+        margin: {
+            bottom: 0;
+        }
+        list: {
+            style: {
+                type: none;
+            }
+        }
+    }
+    .navigation-item {
+        font: {
+            family: $font-roboto;
+            size: 0;
+        }
+        &:not(:first-child) {
+            padding: {
+                left: 15px;
+            }
+        }
+        &:not(:last-child) {
+            padding: {
+                right: 15px;
+            }
+        }
+        &__link {
+            font: {
+                size: 0.9375rem;
+                weight: 400;
+            }
+            text: {
+                decoration: none;
+            }
+            color: #444;
+            transition: color 300ms ease;
+        }
+        &:hover .navigation-item__link {
+            color: #ffff00;
+        }
+    }
+}

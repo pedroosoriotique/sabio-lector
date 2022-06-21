@@ -1,0 +1,31 @@
+// Cabecera
+header {
+    grid-area: head;
+    position: sticky;                                   // Ajuste para el sticky header.
+    top: 0;
+    z-index: 200;
+    .header-container {
+        background: {
+            color: #ccc;
+        }
+        border: {
+            bottom: {
+                width: 3px;
+                style: solid;
+                color: #444;
+            }
+        }
+    }
+    .header-region {
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // max-width: 1140px;
+        min-height: 50px;
+        // font: {
+        //     size: 0;                                  // Ajuste para evitar espacios en blanco (whitespace) inesperados entre elementos inline e inline-block.
+        // }
+        @import 'logo';
+        @import 'navigation';
+    }
+}

@@ -1,0 +1,127 @@
+// Media Queries
+// Para pantallas grandes (desktop)
+@media only screen and (max-width: $breakpoint-md) {    
+    // .section-title {
+    //     width: 50%;
+    // }
+}
+
+// Para pantallas medianas (tablets)
+@media only screen and (max-width: $breakpoint-sm) {
+    header {
+        .header-container {
+            // AYUDA. Descomente estás líneas y cambie el valor de la propiedad border > bottom > width para hacer coincidir el borde inferior de la cabecera con el borde inferior del menú hamburguesa.
+            // background: {
+            //     color: transparent;
+            // }
+            border: {
+                bottom: {
+                    width: 0;
+                    // color: blue;
+                }
+            }
+        }
+    }
+    .navigation {
+        #navigation__input {
+            &:checked ~ .navigation-menu {
+                top: 0;
+            }
+        }
+        .navigation-bars {
+            // display: block;
+        }
+        .navigation-menu {
+            position: absolute;
+            width: 100%;
+            top: calc(-100% - 90px);
+            left: 0;
+            background: {
+                color: #ccc;
+            }
+            padding: {
+                bottom: 10px;
+            }
+            margin: {
+                top: 50px;
+            }
+            border: {
+                bottom: {
+                    width: 3px;
+                    style: solid;
+                    color: #444;
+                }
+            }
+            transition: top 300ms ease;
+            z-index: -100;
+            .navigation-item {
+                padding: {
+                    top: 5px;
+                    right: 15px;
+                    bottom: 5px;
+                    left: 15px;
+                }
+            }
+        }
+    }    
+    [class*="-bnr"] {
+        min-height: 105px;                      // Se ajusta el alto mínimo del banner
+    }
+    // .section-title {
+    //     width: 66.666%;
+    // }
+    #main-carousel {
+        .carousel-caption {
+            .caption-buttons {
+                .btn:not(:last-child) {
+                    margin: {
+                        right: 0;
+                        bottom: 12px;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .footer-wrapper {
+            padding: 50px 0 0;
+        }
+        [class~="footer-section"] {
+            // width: 100%;
+            &:first-child {
+                padding: {
+                    right: 0;
+                    bottom: 25px;
+                }
+            }
+            &:not(:first-child):not(:last-child) {
+                padding: {
+                    right: 0;
+                    bottom: 25px;
+                    left: 0;
+                }
+                border: {
+                    right: {
+                        width: 0;
+                    }
+                    left: {
+                        width: 0;
+                    }
+                }
+            }
+            &:last-child {
+                padding: {
+                    left: 0;
+                    bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+// Para pantallas pequeñas (Mobile)
+@media only screen and (max-width: $breakpoint-xs) {
+    // .section-title {
+    //     width: 100%;
+    // }
+}
