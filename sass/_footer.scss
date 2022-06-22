@@ -98,27 +98,14 @@ footer {
             .twitter {
                 @extend .social-network;
             }
-            // .facebook:hover {
-            //     background: {
-            //         color: map-get($social-network-colors, "facebook");
-            //     }
-            //     color: #fff
-            // }
-            // .instagram:hover {
-            //     background: {
-            //         image: map-get($social-network-colors , "instagram");
-            //         // clip: text;
-            //     }
-            //     color: #fff
-            // }
-            // .twitter:hover {
-            //     background: {
-            //         color: map-get($social-network-colors, "twitter");
-            //     }
-            //     color: #fff;
-            // }
             .facebook:hover {
                 @include footer-social-icons-hover(map-get($social-network-colors, "facebook"));
+            }
+            .instagram:hover {
+                @include footer-social-icons-hover(map-get($social-network-colors, "instagram"));
+            }
+            .twitter:hover {
+                @include footer-social-icons-hover(map-get($social-network-colors, "twitter"));
             }
         }
     }

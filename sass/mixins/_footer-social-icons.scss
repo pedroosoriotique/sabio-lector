@@ -16,14 +16,13 @@
 }
 
 @mixin footer-social-icons-hover($bg-color) {
-    @if $bg-color == "instagram" {
+    @if $bg-color == $instagram-bg-color {
         background: {
             image: $bg-color;
         }
     } @else {
-        background {
+        background: {
             color: $bg-color;
         }
-    }
-         
+    }         
 }
