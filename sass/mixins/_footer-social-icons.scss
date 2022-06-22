@@ -1,0 +1,29 @@
+@mixin footer-social-icons($social-color, $social-bg-color) {
+    width: 25px;
+    height: 25px;
+    line-height: 1.5;
+    text: {
+        align: center;
+    }
+    background: {
+        color: $social-bg-color;
+    }
+    color: $social-color;
+    border: {
+        radius: 50%;
+    }
+    transition: all 300ms ease;
+}
+
+@mixin footer-social-icons-hover($bg-color) {
+    @if $bg-color == "instagram" {
+        background: {
+            image: $bg-color;
+        }
+    } @else {
+        background {
+            color: $bg-color;
+        }
+    }
+         
+}

@@ -4,3 +4,17 @@ $font-opensans: 'Open Sans', sans-serif;
 $breakpoint-md: 992px;
 $breakpoint-sm: 768px;
 $breakpoint-xs: 576px;
+
+// Colores
+// Redes sociales
+$social-color: #fff;
+$social-bg-color: #444;
+$facebook-bg-color: #3b5998;
+$instagram-bg-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+$twitter-bg-color: #1da1f2;
+
+$social-network-colors: (
+    "facebook": $facebook-bg-color,
+    "instagram": $instagram-bg-color,
+    "twitter": $twitter-bg-color
+);
