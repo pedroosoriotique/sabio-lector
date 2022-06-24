@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctanos | Sabio Lector</title>
 
+    <!-- Descripción y palabras clave -->
+    <meta name="description" content="Sabio Lector es una librería en línea enfocada a la promoción de obras literarias de escritores colombianos publicadas por editoriales pequeñas o que están fuera de un grupo editorial. La finalidad de Sabio Lector es ofrecer alternativas de promoción a los autores y a las editoriales para dar a conocer y aumentar la visibilidad de sus obras.">
+
+    <meta name="keywords" content="Sabio Lector, libros, cuento, cuento en Colombia, narrativa, narrativa en Colombia, novela colombiana, poesía colombiana, literatura colombiana, autores nacionales, autores colombianos, contacto, contáctanos">
+
     <!-- Bootstrap - solo CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     
@@ -80,23 +85,23 @@
                     <!-- Formulario de contacto -->
                     <h3>Cuentanos sobre ti</h3>
                     <form action="#">
-                        <label for="name">¿Cual es tu nombre?</label>
-                        <input type="text" placeholder="Juan Perez" name="name" id="name"><br>
-                        <label for="email">¿Tu dirección de correo?</label>
-                        <input type="email" placeholder="tu@correo.com" name="email" id="email"><br>
+                        <label for="contact-form-name">¿Cual es tu nombre?</label>
+                        <input type="text" placeholder="Juan Perez" name="contact-form-name" id="contact-form-name"><br>
+                        <label for="contact-form-email">¿Tu dirección de correo?</label>
+                        <input type="email" placeholder="tu@correo.com" name="contact-form-email" id="contact-form-email"><br>
                         <p>¿Cuales son tus temáticas favoritas?</p>
-                        <input type="checkbox" name="topic1" id="topic1" value="Cuento">
-                        <label for="topic1">Cuento</label><br>
-                        <input type="checkbox" name="topic1" id="topic1" value="Narrativa">
-                        <label for="topic2">Narrativa</label><br>
-                        <input type="checkbox" name="topic1" id="topic1" value="Novela">
-                        <label for="topic3">Novela</label><br>
-                        <input type="checkbox" name="topic1" id="topic1" value="Poesía">
-                        <label for="topic4">Poesía</label><br>
-                        <label for="message">Dejanos un mensaje</label><br>
-                        <textarea name="message" id="message" rows="5" cols="50"></textarea><br>
+                        <input type="checkbox" name="contact-form-topic1" id="contact-form-topic1" value="Cuento">
+                        <label for="contact-form-topic1">Cuento</label><br>
+                        <input type="checkbox" name="contact-form-topic2" id="contact-form-topic2" value="Narrativa">
+                        <label for="contact-form-topic2">Narrativa</label><br>
+                        <input type="checkbox" name="contact-form-topic3" id="contact-form-topic3" value="Novela">
+                        <label for="contact-form-topic3">Novela</label><br>
+                        <input type="checkbox" name="contact-form-topic4" id="contact-form-topic4" value="Poesía">
+                        <label for="contact-form-topic4">Poesía</label><br>
+                        <label for="contact-form-message">Dejanos un mensaje</label><br>
+                        <textarea name="contact-form-message" id="contact-form-message" rows="5" cols="50"></textarea><br>
                         <input class="btn btn-danger" type="reset" value="Borrar">
-                        <input class="btn btn-success"type="submit" value="Enviar">
+                        <input class="btn btn-success" type="submit" value="Enviar">
                     </form>
 
                 </div>
@@ -136,8 +141,8 @@
                     <form action="#" id="subscribe">
                         <div class="input-group mb-3">
                             <span class="input-group-text fas fa-envelope fa-lg" id="subscribe-input-group"></span>
-                            <label for="correo" class="d-none">Suscríbete a nuestro boletín</label>
-                            <input type="text" class="form-control" placeholder="tu@correo.com" aria-label="Dirección de correo" aria-describedby="subscribe-input-group">
+                            <label for="email" class="d-none">Suscríbete a nuestro boletín</label>
+                            <input type="text" id="email" class="form-control" placeholder="tu@correo.com" aria-label="Dirección de correo" aria-describedby="subscribe-input-group">
                         </div>
                     </form>
 
@@ -152,7 +157,7 @@
                         </a>
 
                         <!-- Instagram -->
-                        <a href="https://www.instagram.com/" target="_blankc" title="Instagram" class="instagram">
+                        <a href="https://www.instagram.com/" target="_blank" title="Instagram" class="instagram">
                             <i class="fab fa-instagram fa-sm"></i>
                         </a>
 
